@@ -17,7 +17,7 @@ export class ActionSkipper {
             return getResponse.data != null
         } catch (error: any) {
             // There is either no release or something else went wrong. Either way, run the action.
-            return true;
+            return false;
         }
     }
 }
