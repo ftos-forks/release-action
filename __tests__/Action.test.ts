@@ -68,7 +68,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -89,7 +89,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -131,7 +131,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -154,7 +154,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -183,7 +183,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -207,7 +207,7 @@ describe("Action", () => {
 
         await action.perform()
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -273,7 +273,7 @@ describe("Action", () => {
             expect(error).toEqual("error")
         }
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,
@@ -374,7 +374,7 @@ describe("Action", () => {
             expect(error).toEqual(expectedError)
         }
 
-        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag)
+        expect(genReleaseNotesMock).toHaveBeenCalledWith(tag, undefined)
         expect(createMock).toHaveBeenCalledWith(
             tag,
             generatedReleaseBody,

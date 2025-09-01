@@ -108,7 +108,7 @@ export class Action {
         let releaseBody = this.inputs.updatedReleaseBody
 
         if (this.inputs.generateReleaseNotes && !this.inputs.omitBodyDuringUpdate) {
-            const response = await this.releases.generateReleaseNotes(this.inputs.tag)
+            const response = await this.releases.generateReleaseNotes(this.inputs.tag, this.inputs.generateReleaseNotesPreviousTag)
             releaseBody = response.data.body
         }
 
@@ -131,7 +131,7 @@ export class Action {
         let releaseBody = this.inputs.createdReleaseBody
 
         if (this.inputs.generateReleaseNotes) {
-            const response = await this.releases.generateReleaseNotes(this.inputs.tag)
+            const response = await this.releases.generateReleaseNotes(this.inputs.tag, this.inputs.generateReleaseNotesPreviousTag)
             releaseBody = response.data.body
         }
 
